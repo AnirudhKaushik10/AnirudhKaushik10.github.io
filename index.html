@@ -1,1 +1,213 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Anirudh Kaushik
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Anirudh Kaushik</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Computer Science graduate student at ASU</p>
+        <a href="#contact" class="btn btn--pink">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="projects" id="projects">
+      <div class="row">
+        <h2>Projects</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Platform Jumper Game using Javascript</h3>
+              <p>
+                A 2d platform Jumper game made using Javascript, CSS and HTML.
+              <br>
+              <br>
+                Click on the image for a demo!
+              </p>
+
+              <div class="work__links">
+                <a href="http://github.com/AnirudhKaushik10/Javascript-Platform-Jumper-Game" class="link__text">
+                  View Source Code <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <a href="2dGame.html">
+                <img alt="Qries" src="./images/Javascript_Game.jpg" height="500">
+             </a>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Efficient workers for distributed Machine learning model</h3>
+              <p>
+                Reduced communication cost in distributed workers by combining quantization and
+                sparsification techniques on VGG-16 baseline model. The reduction relies on the fact that
+                we can use a lesser number of bits to send the information while achieving similar
+                accuracy levels
+              </p>
+
+              <div class="work__links">
+                <a href="http://github.com/AnirudhKaushik10/Efficient-Workers-in-Distributed-Machine-Learning" class="link__text">
+                  View Source Code <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/distributed_project.JPG" class="work__image" alt="Project 3" width="500" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Privacy Preserving K-means clustering</h3>
+              <p>
+                A 2-party K-means clustering model, where no party wants to reveal any information
+                about their dataset while training or inference. The mathematical operations used for
+                training the model are replaced by secure operations using oblivious transfer protocol.
+              </p>
+
+              <div class="work__links">
+                <a href="http://github.com/AnirudhKaushik10/Privacy-Preserving-K-Means-Clustering" class="link__text">
+                  View Source Code <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+               <img src="./images/secure_project.png" height="500" width="500">
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Voice Based Emotion Classifier</h3>
+              <p>
+                A machine learning model in python which classifies emotion in spoken sentences, by
+                extracting the characteristic sound features such as MFCC’s and Chromogram and
+                feeding it to a convolutional neural network.
+              </p>
+
+              <div class="work__links">
+                <a href="http://github.com/AnirudhKaushik10/Voice-Emotion-Classifier" class="link__text">
+                  View Source Code <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+               <img src="./images/VoiceProject.jpg" height="500" width="500">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Prior to joining Arizona State Univeristy, I had worked as an Android developer for more than 2 years
+              at Samsung Reseach Insitute - Noida, India. I had also worked as a Reseach Trainee at CAIR Lab,DRDO which allowed me to gain 
+              valuable experience under India's top researchers. In pursuit of enhancing my skill-set, I am currently seeking
+              a student assistant role.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="./Anirudh Kaushik - Resume.pdf" class="btn">My Resume</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Contact Me</h2>
+      <div class="contact__info">
+        <p>
+          I have significant experience in creating Machine Learning models as well as end-to-end
+          Android apps. Moreover, I am adept at programming in Javascript,HTML and CSS. 
+          If you believe I'm a good fit for the role that you have in mind, then go ahead and click the button below!
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:akaush21@asu.edu" class="btn">akaush21@asu.edu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="http://github.com/AnirudhKaushik10" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/anirudh-kaushik-97944014a/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
