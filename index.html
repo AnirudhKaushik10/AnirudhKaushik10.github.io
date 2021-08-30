@@ -5,30 +5,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/A.png" />
-
-  <!-- Put your site title here -->
   <title>
     Anirudh Kaushik
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="description" content="Add small description of yourself.">
   <meta name="keywords" content="Put your name, skills and some coding keywords" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
-  <!-- ***** Header ***** -->
-
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
@@ -38,11 +33,9 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
           <span>Anirudh Kaushik</span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>Computer Science graduate student at ASU</p>
+        <p>Computer Science graduate student<br>Arizona State University</p>
         <a href="#contact" class="btn btn--pink">Contact Me</a>
       </div>
     </div>
@@ -50,38 +43,28 @@
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Prior to joining Arizona State Univeristy, I had worked as an Android developer for more than 2.5 years
+              at Samsung Reseach Insitute - Noida, India. I had also worked as a Machine Learning Reseach Trainee at CAIR Lab, DRDO which allowed me to gain 
+              valuable experience under India's top researchers. In pursuit of enhancing my skill-set, I am currently seeking
+              a student assistant role.
+            </p>
+            <a href="./Anirudh Kaushik - Resume.pdf" class="btn">My Resume</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <section class="projects" id="projects">
       <div class="row">
         <h2>Projects</h2>
         <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Platform Jumper Game using Javascript</h3>
-              <p>
-                A 2d platform Jumper game made using Javascript, CSS and HTML.
-              <br>
-              <br>
-                Click on the image for a demo!
-              </p>
-
-              <div class="work__links">
-                <a href="http://github.com/AnirudhKaushik10/Javascript-Platform-Jumper-Game" class="link__text">
-                  View Source Code <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <a href="LandingPage.html">
-                <img alt="Qries" src="./images/Javascript_Game.jpg" height="500">
-             </a>
-            </div>
-          </div>
-
           <div class="work__box">
             <div class="work__text">
               <h3>Efficient workers for distributed Machine learning model</h3>
@@ -125,6 +108,29 @@
 
           <div class="work__box">
             <div class="work__text">
+              <h3>Platform Jumper Game using Javascript</h3>
+              <p>
+                A 2d platform Jumper game made using Javascript, CSS and HTML.
+              <br>
+              <br>
+                Click on the image for a demo!
+              </p>
+
+              <div class="work__links">
+                <a href="http://github.com/AnirudhKaushik10/Javascript-Platform-Jumper-Game" class="link__text">
+                  View Source Code <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <a href="LandingPage.html">
+                <img alt="Qries" src="./images/Javascript_Game.jpg" height="500">
+             </a>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
               <h3>Voice Based Emotion Classifier</h3>
               <p>
                 A machine learning model in python which classifies emotion in spoken sentences, by
@@ -144,31 +150,7 @@
           </div>
         </div>
       </div>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Prior to joining Arizona State Univeristy, I had worked as an Android developer for more than 2 years
-              at Samsung Reseach Insitute - Noida, India. I had also worked as a Reseach Trainee at CAIR Lab,DRDO which allowed me to gain 
-              valuable experience under India's top researchers. In pursuit of enhancing my skill-set, I am currently seeking
-              a student assistant role.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="./Anirudh Kaushik - Resume.pdf" class="btn">My Resume</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
   </main>
-
-  <!-- ***** Contact ***** -->
 
   <section class="contact" id="contact">
     <div class="row">
@@ -179,17 +161,13 @@
           Android apps. Moreover, I am adept at programming in Javascript,HTML and CSS. 
           If you believe I'm a good fit for the role that you have in mind, then go ahead and click the button below!
         </p>
-        <!-- Replace the email with yours -->
         <a href="mailto:akaush21@asu.edu" class="btn">akaush21@asu.edu</a>
       </div>
     </div>
   </section>
 
-  <!-- ***** Footer ***** -->
-
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
           <a href="http://github.com/AnirudhKaushik10" title="Link to Github Profile">
